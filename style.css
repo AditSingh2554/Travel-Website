@@ -264,8 +264,10 @@ header, main, footer {
 .page2-img{
     width: 100%;
     border-radius: 10px;
-    position: relative;
+    position: static;
     top: 50px;
+    z-index: 1;
+    margin-top: 30px
 }
 
 .popular-destinations{
@@ -275,6 +277,7 @@ header, main, footer {
     color: #b62727;
     padding: 100px 0px 40px 0px;
     text-align: center;
+    z-index: 3;
 }
 
 .pd-text{

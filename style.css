@@ -1,0 +1,583 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo{
+    width: 140px;
+    display: inline-block;
+}
+
+#menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#menu-bar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #b62727;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+#menu-bar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+#menu-bar a:hover {
+    color: #f1f1f1;
+}
+
+
+.contact{
+    width: 50px;
+    height: 50px;
+
+}
+
+.page1{
+    background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 60%)), url(photos/heroimg.jpg), no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+}
+
+.page1-main-text{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.booking-center{
+    background-color: white;
+    margin: 13px;
+    border-radius: 25px;
+    height: 400px;
+}
+
+.flights{
+    position: relative;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+}
+
+.flight-logo{
+    display: inline-block;
+}
+
+.flight-text{
+    display: inline-block;
+}
+
+.origins{
+    display: block;
+    position: relative;
+    top: 9%;
+    left: 10%;
+    font-size: 12px;
+}
+
+.origin-selector{
+    display: block;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+}
+
+.origin-selector:required:invalid {
+    color: gray;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color: black;
+  }
+
+.destination{
+    display: block;
+    position: relative;
+    top: 14%;
+    left: 10%;
+    font-size: 12px;
+}
+
+.destination-selector{
+    display: block;
+    position: relative;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+}
+
+.destination-selector:required:invalid {
+    color: gray;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color: black;
+  }
+
+.date-passenger{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 30% 30% 40%;
+    font-size: 12px;
+    position: relative;
+    top: 18%;
+    left: 10%;
+}
+
+.date-passenger-selector{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 30% 30% 40%;
+    position: relative;
+    left: 10%;
+    top: 18%;
+    border-radius: 5px;
+}
+
+.depart-date-selector{
+    width: 85%;
+    background-color: transparent;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.return-date-selector{
+    width: 85%;
+    background-color: transparent;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.passenger-selector{
+    background-color: transparent;
+    height: 48px;
+    border-radius: 5px;
+    color: black;
+    border: 1px solid black;
+}
+
+.passenger-selector:required:invalid {
+    color: gray;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color: black;
+  }
+
+.search{
+    color: #fff;
+    background-color: #b62727;
+    width: 80%;
+    height: 48px;
+    position: relative;
+    top: 23%;
+    left: 10%;
+    display: block;
+    text-align: center;
+    padding-top: 13px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.page2{
+    display: grid;
+    margin: 0px 13px 0px 13px;
+    grid-template-rows: 50% 50%;
+}
+
+.about{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #b62727;
+    padding: 40px 0px 40px 0px;
+}
+
+.about-text{
+    width: 100%;
+    text-align: left;
+    padding-bottom: 45px;
+}
+
+.read-more{
+    text-decoration: none;
+    color: #fff;
+    background-color: #07083b;
+    font-size: 18px;
+    width: 181px;
+    height: 58px;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.page2-img{
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+}
+
+.popular-destinations{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #b62727;
+    padding: 100px 0px 40px 0px;
+    text-align: center;
+}
+
+.pd-text{
+    font-size: 16px;
+    text-align: center;
+    margin: 13px;
+}
+
+.destination-images{
+    display: grid;
+    grid-template-columns: 100%;
+    background-size: contain;
+    margin: 13px;
+}
+
+.page3-img1{
+    width: 100%;
+    opacity: 0.7;
+}
+
+.img1 p{
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    top: -100px;
+    color: #fff;
+}
+
+.page3-img2{
+    width: 100%;
+    opacity: 0.7;
+}
+
+.img2 p{
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    top: -150px;
+    color: #fff;
+}
+
+.page3-img3{
+    width: 100%;
+    opacity: 0.7;
+}
+
+.img3 p{
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    top: -200px;
+    color: #fff;
+}
+
+.page4{
+    background-color: #07083B;
+    height: 300px;
+}
+
+.secure-haven{
+    margin: 13px;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: #fff;
+    position: relative;
+    top: 30px;
+}
+
+.secure-haven-text{
+    margin: 13px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    top: 30px;
+}
+
+.address{
+    margin: 13px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    top: 30px;
+}
+
+.call{
+    margin: 13px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    top: 30px;
+}
+
+.call a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+
+    .booking-center{
+        margin: 0px 50px 0px 50px;
+    }
+    
+    .origin-selector{
+        width: 39%;
+        display: inline-block;
+    }
+
+    .destination{
+        display: inline-block;
+        left: 10%;
+        top: 1%;
+    }
+
+    .destination-selector{
+        width: 39%;
+        left: 50%;
+        top: -2%;
+    }
+
+    .date-passenger{
+        grid-template-columns: 25% 25% 50%;
+    }
+
+    .date-passenger-selector{
+        grid-template-columns: 25% 25% 50%;
+    }
+
+    #menu-bar{
+        z-index: 2;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .passenger-selector{
+        width: 45%;
+        display: inline-block;
+    }
+
+    .destination{
+        top: -1.1%;
+        left: 11%;
+    }
+
+    .destination-selector{
+        top: -6%;
+    }
+
+    .search{
+        width: 20%;
+        display: inline-block;
+        top: 1.9%;
+        left: 69%;
+        border-radius: 5px;
+    }
+
+    .booking-center{
+        height: 300px;    
+    }
+
+    #menu-icon {
+        display: none;
+    }
+    #menu-bar {
+        position: absolute;
+        top: 13px;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        padding-top: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: transparent;
+    }
+    #menu-bar a {
+        padding: 14px 20px;
+        font-size: 18px;
+        color: black;
+        display: inline-block;
+    }
+    #menu-bar a:hover {
+        color: #ddd;
+    }
+
+    .page1{
+        height: 500px;
+    }
+
+    .page1-main-text{
+        position: relative;
+        top: 10%;
+    }
+
+    .booking-center{
+        height: 200px;
+        position: relative;
+        top: 20%;
+    }
+
+    .origins{
+        left: 3%;
+        top: 19%;
+    }
+
+    .origin-selector{
+        width: 16%;
+        top: 20%;
+        left: 3%;
+    }
+
+    .destination{
+        left: 4.7%;
+        top: 4%;
+    }
+
+    .destination-selector{
+        width: 16%;
+        left: 21%;
+        top: -4%;
+    }
+
+    .depart-date-selector{
+        width: 16%;
+    }
+
+    .return-date-selector{
+        width: 16%;
+
+    }
+
+    .passenger-selector{
+        width: 16%;;
+    }
+
+    .search{
+        width: 16%;
+        top: -58%;
+        left: 82%;
+    }
+
+    .date-passenger-selector{
+        display: flex;
+        top: -35%;
+        left: 39%;
+        gap: 20px;
+    }
+
+    .date-passenger{
+        top: -36%;
+        left: 39%;
+        width: 60%;
+    }
+
+    .page2{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .about{
+        margin: 30px 0px 10px 60px;
+    }
+
+    .about-text{
+        padding: 25px 60px 10px 60px;
+    }
+
+    .page2-img{
+        width: 420px;
+        margin: 0px 0px 0px 140px;
+    }
+
+    .read-more{
+
+        margin: 40px 0px 0px 60px;
+    }
+
+    .pd-text{
+        padding: 0% 20% 5% 20%;
+    }
+
+    .destination-images{
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        gap: 20px;
+    }
+
+    .img2 p{
+        top: -28%;
+    }
+
+    .img3 p{
+        top: -28%;
+    }
+
+    .secure-haven{
+        text-align: center;
+    }
+
+    .secure-haven-text{
+        padding: 0% 20% 0% 20%;
+    }
+
+    .address{
+        text-align: center;
+    }
+
+    .call{
+        text-align: center;
+    }
+
+}

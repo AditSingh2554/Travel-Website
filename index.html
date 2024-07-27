@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aa16bd686b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Secure Haven</title>
+</head>
+<body>
+    
+    <header>
+
+        <img class="logo" src="photos/logo.png" alt="This is logo">
+
+        <div id="menu-icon" onclick="toggleMenu()">☰</div>
+        <div id="menu-bar">
+        <a href="index.html" class="menu-item">Home</a>
+        <a href="contact.html" class="menu-item">Contact</a>
+        <a href="about.html" class="menu-item">About</a>
+        <a href="tel:+1(866)887-9588" class="menu-item">(866)887-9588</a>
+
+        <script src="script.js"></script>
+
+    </header>
+
+    <main>
+
+        <div class="page1">
+
+            <div class="page1-main-text">TRAVELLING AROUND THE WORLD</div>
+
+            <div class="booking-center">
+
+                <div class="flights">
+
+                    <div class="flight-logo"><i class="fa-solid fa-plane-departure"></i></div>
+                    <div class="flight-text">Flights</div>
+                    <br>
+                    <br>
+                    <hr>
+
+                </div>
+
+                <div class="origins"><p>Origin</p></div>
+                
+                <select class="origin-selector" name="origin" id="" required>
+
+                    <option value="" disabled selected>&nbsp; Origin</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                    <option value="Beijing">Beijing</option>
+                    <option value="Berlin">Berlin</option>
+                    <option value="Bogota">Bogota</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Cairo">Cairo</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Dhaka">Dhaka</option>
+                    <option value="Istanbul">Istanbul</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Karachi">Karachi</option>
+                    <option value="Kinshasa">Kinshasa</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Lahore">Lahore</option>
+                    <option value="Lima">Lima</option>
+                    <option value="London">London</option>
+                    <option value="Manila">Manila</option>
+                    <option value="Mexico City">Mexico City</option>
+                    <option value="Moscow">Moscow</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Nairobi">Nairobi</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Santiago">Santiago</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Seoul">Seoul</option>
+                    <option value="Shanghai">Shanghai</option>
+                    <option value="Shenzhen">Shenzhen</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Tehran">Tehran</option>
+                    <option value="Tokyo">Tokyo</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Bhopal">Bhopal</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Faridabad">Faridabad</option>
+                    <option value="Ghaziabad">Ghaziabad</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Indore">Indore</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Kanpur">Kanpur</option>
+                    <option value="Kochi">Kochi</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Ludhiana">Ludhiana</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Nashik">Nashik</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Raipur">Raipur</option>
+                    <option value="Ranchi">Ranchi</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Thane">Thane</option>
+                    <option value="Vadodara">Vadodara</option>
+                    <option value="Varanasi">Varanasi</option>
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+
+                </select>
+
+                <div class="destination">Destination</div>
+
+                <select class="destination-selector" name="destination-selector" id="destination-selector">
+
+                    <option value="" disabled selected>&nbsp; Destination</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                    <option value="Beijing">Beijing</option>
+                    <option value="Berlin">Berlin</option>
+                    <option value="Bogota">Bogota</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Cairo">Cairo</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Dhaka">Dhaka</option>
+                    <option value="Istanbul">Istanbul</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Karachi">Karachi</option>
+                    <option value="Kinshasa">Kinshasa</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Lahore">Lahore</option>
+                    <option value="Lima">Lima</option>
+                    <option value="London">London</option>
+                    <option value="Manila">Manila</option>
+                    <option value="Mexico City">Mexico City</option>
+                    <option value="Moscow">Moscow</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Nairobi">Nairobi</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Santiago">Santiago</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Seoul">Seoul</option>
+                    <option value="Shanghai">Shanghai</option>
+                    <option value="Shenzhen">Shenzhen</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Tehran">Tehran</option>
+                    <option value="Tokyo">Tokyo</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Bhopal">Bhopal</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Faridabad">Faridabad</option>
+                    <option value="Ghaziabad">Ghaziabad</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Indore">Indore</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Kanpur">Kanpur</option>
+                    <option value="Kochi">Kochi</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Ludhiana">Ludhiana</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Nashik">Nashik</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Raipur">Raipur</option>
+                    <option value="Ranchi">Ranchi</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Thane">Thane</option>
+                    <option value="Vadodara">Vadodara</option>
+                    <option value="Varanasi">Varanasi</option>
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+
+                </select>
+
+                <div class="date-passenger">
+
+                    <div class="depart-date">Depart date</div>
+
+                    <div class="return-date">Return date</div>
+
+                    <div class="passengers">Passengers</div>
+
+                </div>
+
+                <div class="date-passenger-selector">
+
+                    <input class="depart-date-selector" type="date" name="" id="">
+
+                    <input class="return-date-selector" type="date" name="" id="">
+
+                    <select class="passenger-selector" name="" id="">
+
+                        <option value="" disabled selected>&nbsp; Passengers</option>
+                        <option value="1 Passenger">1 Passenger</option>
+                        <option value="2 Passenger">2 Passenger</option>
+                        <option value="3 Passenger">3 Passenger</option>
+                        <option value="4 Passenger">4 Passenger</option>
+                        <option value="5 Passenger">5 Passenger</option>
+                        <option value="6 Passenger">6 Passenger</option>
+                        <option value="7 Passenger">7 Passenger</option>
+                        <option value="8 Passenger">8 Passenger</option>
+                        <option value="9 Passenger">9 Passenger</option>
+                        <option value="10 Passenger">10 Passenger</option>
+
+                    </select>
+
+                </div>
+
+                <a class="search" href="index.html">Search</a>
+
+            </div>
+
+        </div>
+
+        <div class="page2">
+
+            <div class="sec-1">
+
+                <div class="about">About us</div>
+
+                <div class="about-text">
+
+                    Welcome to Secure Haven – where every journey is a story waiting to be written. At VacaVentures, We’re not just a travel website; we’re your dedicated companions in crafting moments that linger long after the journey ends.Our story begins with a passion for exploration, a love for the uncharted, and a commitment to redefining the way you experience travel. We understand that every traveler is unique, and so are their dreams. That's why Secure Haven Group LLC is more than a platform; it's a personalized gateway to your next adventure.
+
+                </div>
+
+                <a class="read-more" href="about.html">Read more</a>
+
+            </div>
+
+            <img class="page2-img" src="photos/about-img.jpg" alt="">
+
+        </div>
+
+        <div class="page3">
+
+            <div class="popular-destinations">Popular Destinations</div>
+
+            <div class="pd-text">
+
+                Make your journey to iconic cityscapes, sun-kissed beaches, and hidded gems - our popular destinations promise unforgettable adventures that resonate with every traveler's wanderlust.
+
+            </div>
+
+            <div class="destination-images">
+
+                <div class="img1"><img class="page3-img1" src="photos/page2-img1.avif" alt=""><p>New York</p></div>
+                <div class="img2"><img class="page3-img2" src="photos/page2-img2.avif" alt=""><p>London</p></div>
+                <div class="img3"><img class="page3-img3" src="photos/page2-img3.avif" alt=""><p>Flores Island (Portugal)</p></div>
+
+            </div>
+
+        </div>
+
+        <div class="page4">
+
+            <div class="secure-haven">Secure Haven</div>
+
+            <div class="secure-haven-text">Welcome to Secure Haven - where every story is waiting to be written. At Secure Haven, We're not just a travel website; we're your dedicated campanions in crafting moments that linger long after the journey ends.</div>
+
+            <div class="address"><i class="fa-solid fa-location-dot"></i> &nbsp; 312 Schillinger Rd. <br> &nbsp; &nbsp; &nbsp; S. STE. 125
+                Mobile, AL 36608
+            </div>
+
+            <div class="call"><i class="fa-solid fa-phone"></i><a href="tel:++1(866)887-9588">+1(866)887-9588</a></div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
